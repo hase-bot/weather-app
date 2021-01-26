@@ -1,0 +1,87 @@
+h1 {
+  text-align: center;
+  padding: 55px 0 35px;
+  font-weight: bold;
+  opacity: 0.5;
+}
+
+form {
+  text-align: center;
+  margin: 0 0 25px;
+}
+
+h2 {
+  padding: 15px;
+}
+
+p {
+  font-size: 30px;
+  padding: 20px 0 5px;
+}
+
+body {
+  background: #f7f7f7;
+  color: #100303;
+}
+
+.fa-cloud-moon-rain {
+  font-size: 80px;
+  color: #fa26a0;
+  opacity: 0.6;
+}
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.row {
+  position: relative;
+  left: 335px;
+  width: 50%;
+}
+
+.forecast {
+  position: relative;
+  left: 335px;
+}
+
+.fa-cloud {
+  color: #43d8c9;
+}
+
+.fa-cloud-rain {
+  color: #3b064d;
+}
+
+.fa-star {
+  color: #fcd307;
+}
+
+.fa-rainbow {
+  color: #17b978;
+}
+
+.fa-snowflake {
+  color: #6c5ce7;
+}
+
+.col-sm {
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.go-button {
+  border-radius: 15px;
+  font-weight: bold;
+}
+
+.go-button:hover {
+  background-color: #f7f7f7;
+}
+
+#output {
+  text-align: center;
+  width: 100%;
+  font-weight: bold;
+}
