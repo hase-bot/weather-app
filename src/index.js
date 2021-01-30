@@ -1,12 +1,17 @@
-let apiKey = "5c4d88bba0f02819f5f9cbd942dedf59";
-let city = "Zurich"
-let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric`;
-
-
 function showTemperature(response) {
-let temperaturetoday = Math.round(response.data.main.temp);
-let temperatureElement = document.querySelector("#temperaturetoday");
-temperatureElement.innerHTML = `${temperaturetoday}°C`;
+  document.querySelector("h2").innerHTML = response.data.name;
+  document.querySelector("#temperaturetoday").innerHTML = Math.round(
+    response.data.main.temp);
 }
 
-axios.get(`${apiUrl}&appid=${apiKey}`).then(showTemperature);
+function citySubmit(event) {
+  event.preventDefault();
+  let city = document.querySelector("#search-text-input").value;
+  searchCity(city);
+}
+
+function searchLocation(position) {
+  let apiKey = "5c4d88bba0f02819f5f9cbd942dedf59";
+  let apiURL = `https://api.openweathermap.org/data/2.5/weather?q=${response.data.name}&units=metric`;
+  axios.get(`${apiURL}&appid=${apiKey}`).then(showTemperature);
+}
